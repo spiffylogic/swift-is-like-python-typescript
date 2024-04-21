@@ -3,7 +3,7 @@ doctype
 
 html
   head
-    title "Swift is like Go"
+    title "Swift is like Python is like TypeScript"
     meta (:charset utf-8)
     link (:rel icon)
       :href http://logo.cirru.org/cirru-32x32.png
@@ -16,20 +16,12 @@ html
     script (:src https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/swift.min.js)
     script (:defer true) "hljs.initHighlightingOnLoad();"
   body
-    a (:target _blank)
-      :href https://github.com/jiyinyiyong/swift-is-like-go
-      img#fork-me (:src http://jiyinyiyong.u.qiniudn.com/fork-me.png)
-    #note
-      = "Fork the repo if you want to help improve it. :)"
-      br
-      = "You may also check "
-      a (:href http://hyperpolyglot.org/c) (:target _blank)
-        = "Hyperpolyglot C, Go, Swift: a side-by-side reference sheet"
     .section
       .title BASICS
       .case (.name "Hello World") $ .pair
         .card (.lang Swift) $ pre.code $ code.swift (@insert code/hello-world.swift)
-        .card (.lang Go   ) $ pre.code $ code.go    (@insert code/hello-world.go)
+        .card (.lang Python ) $ pre.code $ code.py    (@insert code/hello-world.py)
+        .card (.lang Python ) $ pre.code $ code.ts    (@insert code/hello-world.ts)
       .case (.name "Variables And Constants") $ .pair
         .card (.lang Swift) $ pre.code $ code.swift (@insert code/variables-and-constants.swift)
         .card (.lang Go   ) $ pre.code $ code.go    (@insert code/variables-and-constants.go)
