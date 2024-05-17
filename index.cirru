@@ -12,16 +12,17 @@ html
       :href https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/github.min.css
     style (@insert css/style.css)
     script (:src https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js)
-    script (:src https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/go.min.js)
+    script (:src https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/python.min.js)
     script (:src https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/swift.min.js)
+    script (:src https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/typescript.min.js)
     script (:defer true) "hljs.initHighlightingOnLoad();"
   body
     .section
       .title BASICS
       .case (.name "Hello World") $ .pair
-        .card (.lang Swift) $ pre.code $ code.swift (@insert code/hello-world.swift)
-        .card (.lang Python ) $ pre.code $ code.py    (@insert code/hello-world.py)
-        .card (.lang Python ) $ pre.code $ code.ts    (@insert code/hello-world.ts)
+        .card (.lang Swift     ) $ pre.code $ code.swift (@insert code/hello-world.swift)
+        .card (.lang Python    ) $ pre.code $ code.py    (@insert code/hello-world.py)
+        .card (.lang TypeScript) $ pre.code $ code.ts    (@insert code/hello-world.ts)
       .case (.name "Variables And Constants") $ .pair
         .card (.lang Swift) $ pre.code $ code.swift (@insert code/variables-and-constants.swift)
         .card (.lang Go   ) $ pre.code $ code.go    (@insert code/variables-and-constants.go)
@@ -87,9 +88,10 @@ html
       .case (.name "Subclass") $ .pair
         .card (.lang Swift) $ pre.code $ code.swift (@insert code/subclass.swift)
         .card (.lang Go   ) $ pre.code $ code.go    (@insert code/subclass.go)
-      .case (.name "Checking Type") $ .pair
-        .card (.lang Swift) $ pre.code $ code.swift (@insert code/checking-type.swift)
-        .card (.lang Go   ) $ pre.code $ code.go    (@insert code/checking-type.go)
+      .case (.name "Type Checking") $ .pair
+        .card (.lang Swift     ) $ pre.code $ code.swift (@insert code/checking-type.swift)
+        .card (.lang Python    ) $ pre.code $ code.py    (@insert code/checking-type.py)
+        .card (.lang TypeScript) $ pre.code $ code.ts    (@insert code/checking-type.ts)
       .case (.name "Downcasting") $ .pair
         .card (.lang Swift) $ pre.code $ code.swift (@insert code/downcasting.swift)
         .card (.lang Go   ) $ pre.code $ code.go    (@insert code/downcasting.go)
