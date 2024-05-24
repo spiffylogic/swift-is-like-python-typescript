@@ -24,8 +24,9 @@ html
         .card (.lang Python    ) $ pre.code $ code.py    (@insert code/hello-world.py)
         .card (.lang TypeScript) $ pre.code $ code.ts    (@insert code/hello-world.ts)
       .case (.name "Variables And Constants") $ .pair
-        .card (.lang Swift) $ pre.code $ code.swift (@insert code/variables-and-constants.swift)
-        .card (.lang Go   ) $ pre.code $ code.go    (@insert code/variables-and-constants.go)
+        .card (.lang Swift     ) $ pre.code $ code.swift (@insert code/variables-and-constants.swift)
+        .card (.lang Python    ) $ pre.code $ code.py    (@insert code/variables-and-constants.py)
+        .card (.lang TypeScript) $ pre.code $ code.ts    (@insert code/variables-and-constants.ts)
       .case (.name "Explicit Types") $ .pair
         .card (.lang Swift) $ pre.code $ code.swift (@insert code/explicit-types.swift)
         .card (.lang Go   ) $ pre.code $ code.go    (@insert code/explicit-types.go)
